@@ -485,7 +485,7 @@ if(CONFIG.endImg){
   const t=document.getElementById("endThumb");t.style.backgroundImage="url("+CONFIG.endImg+")";t.textContent="";
 }
 
-document.getElementById("btnPlay").onclick=()=>{applyLevelVisuals(true);};
+
 document.getElementById("btnResetLevel").onclick=()=>{
   CONFIG.levels[editLv]=defaultLevel(editLv);
   saveConfig();syncLevelForm();if(levelIdx===editLv)applyLevelVisuals(true);
