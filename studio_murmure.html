@@ -17,6 +17,10 @@ body{overflow:auto}
 @media(max-width:900px){#shell{grid-template-columns:1fr}}
 
 /* ===== STUDIO ===== */
+#back a {
+    text-decoration: none;
+    color: inherit; /* Pour garder la couleur du texte du bouton */
+}
 #studio{background:linear-gradient(180deg,#0B1424 0%,#070D18 100%);border-right:1px solid var(--border);padding:16px 16px 28px;overflow:auto;max-height:100dvh}
 @media(max-width:900px){#studio{max-height:none;border-right:none;border-bottom:1px solid var(--border)}}
 .studioHead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}
