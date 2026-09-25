@@ -51,7 +51,11 @@ textarea{min-height:64px;resize:vertical}
 .levelTabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .actions{display:flex;flex-direction:column;gap:7px;margin-top:6px}
 .btn{border:none;border-radius:12px;padding:10px 12px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
-.btnGo{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+.btnGo{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;}
+  #btnGo a {
+    text-decoration: none;
+    color: inherit; /* Pour garder la couleur du texte du bouton */
+}
 .btnGhost{background:var(--card2);color:var(--fg);border:1px solid var(--border)}
 .btnDanger{background:#2A1218;color:#FDA4AF;border:1px solid #4A1D2A}
 
@@ -159,7 +163,7 @@ textarea{min-height:64px;resize:vertical}
     </div>
 
     <div class="actions">
-      <button class="btn btnGo" id="btnPlay">Recharger le niveau en cours</button>
+      <button class="btn btnGo" id="btnPlay"><a href:"https://pierreg78-maker.github.io/studio_casse_briques/studio_murmure.html">Voir un exemple de campagne</a></button>
       <button class="btn btnGhost" id="btnResetLevel">Revenir aux visuels par défaut de ce niveau</button>
       <button class="btn btnDanger" id="btnResetAll">Réinitialiser toute la démo</button>
     </div>
@@ -292,7 +296,7 @@ function makeDefaultBg(){
   const gold=g.createLinearGradient(c.width*.5-200,c.height*.22-40,c.width*.5+200,c.height*.22+40);
   gold.addColorStop(0,"#FDE68A");gold.addColorStop(.5,"#E8C36A");gold.addColorStop(1,"#B45309");
   g.fillStyle=gold;
-  g.fillText("Votre logo",c.width/2,c.height*.22);
+  g.fillText("Votre logo combat",c.width/2,c.height*.22);
   g.shadowBlur=0;
   return c.toDataURL("image/jpeg",.86);
 }
