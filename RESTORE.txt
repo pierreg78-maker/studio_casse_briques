@@ -1,7 +1,0 @@
-Les fichiers complets index.html (862 lignes) et studio_murmure.html (915 lignes) sont prets en local.
-Pour restaurer depuis GitHub UI:
-1. Ouvrir https://github.com/pierreg78-maker/studio_casse_briques/tree/c1772f01fb8e5dd8062af0493baa63136c287614
-2. Remplacer index.html et studio_murmure.html par ces versions
-3. Puis appliquer les 2 liens:
-   - bouton exemple -> https://pierreg78-maker.github.io/studio_casse_briques/studio_murmure.html
-   - Retour accueil -> https://pierreg78-maker.github.io/studio/
